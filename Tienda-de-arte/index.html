@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoRuning</title>
+<style>
+    { 
+        padding: 0;s
+        margin: 0;
+    }
+
+    body{
+        height: 100hv;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .contenedor{
+        width: 920px;
+        height: 280px;
+        margin: 0 auto;
+        position: relative;
+        background:lawngreen
+    }
+
+    .dino{
+        width: 84px;
+        height: 84px;
+        position: absolute;
+        bottom: 22px;
+        left: 42px;
+        z-index: 2;
+
+        background: url() repeat-x 0px 0px;
+        background-size: 336px 84px ;
+        background-position: 0px;
+    }
+
+    .dino-corriendo{
+        animation: animarDino 0.25s steps(2) infinite;
+    }
+
+
+    .dino-estrellado{
+        background-position-x: -252px;
+
+
+    }
+
+    .suelo{
+        width: 200%;
+        height: 42px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url();
+        background-size: 50% 42px;
+    }
+
+    .score{
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        z-index: 10;
+        color: black;
+        font-family: Verdana;
+        font-size: 30px;
+
+
+
+    }
+
+    @keyframe animar dino { 
+        from{
+             background-position: -84px;
+
+
+        }
+        to{
+            background-position: -254px;
+
+
+        }
+
+
+        
+
+
+
+        
+    }
+
+
+</style>
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="suelo"></div>
+        <div class="dino"></div>
+        <div class="store"></div>
+
+
+
+        
+    </div>
+    
+    
+</body>
+</html>
